@@ -1,11 +1,17 @@
-// A working news-image-daily entry (Node 22, standard library only): its image is the entry.png beside this file, and
-// the program copies it to /output/entry.png. A starting point, not a winner: replace the image. The gate takes a
-// whole PNG or JPEG of at most 1 MiB and 1024 by 1024 pixels, and the judge sees exactly the bytes copied.
-//
-// Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
-//   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { resolve, join } from 'node:path';
 
-import { copyFileSync } from 'node:fs';
-import { join } from 'node:path';
+const pngPath = new URL('./entry.png', import.meta.url);
+const pngBytes = readFileSync(pngPath);
+const pngHeader = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
 
-copyFileSync(new URL('./entry.png', import.meta.url), join(process.env.MAKEFUN_OUTPUT_DIR ?? '/output', 'entry.png'));
+if (pngBytes.length < pngHeader.length || !pngBytes.subarray(0, pngHeader.length).equals(pngHeader)) {
+  throw new Error('The bundled entry.png does not have a valid PNG signature.');
+}
+
+const outputDirectory = resolve(process.env.MAKEFUN_OUTPUT_DIR ?? '/output');
+const outputPath = join(outputDirectory, 'entry.png');
+
+mkdirSync(outputDirectory, { recursive: true });
+writeFileSync(outputPath, pngBytes);
+console.log(`${outputPath} ${pngBytes.length} bytes`);
