@@ -1,107 +1,21 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1024, initial-scale=1">
-<style>
-*{box-sizing:border-box}
-html,body{margin:0;width:1024px;height:1024px;overflow:hidden;background:#f4f0e6;color:#171714}
-body{padding:16px 24px;font-family:'Liberation Sans','DejaVu Sans',sans-serif}
-.page{height:992px;display:grid;grid-template-rows:78px 378px 202px 194px 140px}
-.mast{display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:9px;border-bottom:4px solid #171714}
-.brand{font:bold 43px/1 'Liberation Serif','Noto Serif',serif;letter-spacing:-1.5px;white-space:nowrap}
-.date{text-align:right;font-weight:bold;font-size:14px;line-height:1.15;letter-spacing:.7px;padding-bottom:0}
-.date strong{font:bold 24px/1 'Liberation Serif','Noto Serif',serif;letter-spacing:0}
-.lead{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;align-items:center;padding:12px 0;border-bottom:2px solid #171714;min-height:0}
-.leadcopy{align-self:start}
-.kicker{font-size:15px;line-height:18px;font-weight:bold;letter-spacing:1.5px;color:#b52020;margin:0 0 6px}
-h1{font:bold 61px/.93 'Liberation Serif','Noto Serif',serif;letter-spacing:-1.8px;margin:0 0 10px}
-.lead p{font-size:17px;line-height:1.27;margin:0}
-.map{display:block;width:100%;height:326px;border:1px solid #252622;background:#cfe0e6}
-.map text{font-family:'Liberation Sans','DejaVu Sans',sans-serif;font-weight:bold;fill:#171714}
-.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:10px 0;border-bottom:2px solid #171714;min-height:0}
-.card{min-width:0;padding-right:11px;border-right:1px solid #777;overflow:hidden}
-.card:last-child{border-right:0;padding-right:0}
-.card h2,.health h2,.voyager h2{font:bold 28px/1 'Liberation Serif','Noto Serif',serif;margin:0 0 6px}
-.card p,.health p,.voyager p{font-size:16px;line-height:1.17;margin:5px 0}
-.card svg{float:right;width:86px;height:70px;margin:0 0 3px 5px}
-.caption{font:bold 13px/16px 'Liberation Sans','DejaVu Sans',sans-serif;margin:0 0 4px}
-.senate-score{font:bold 30px/1 'Liberation Serif','Noto Serif',serif;margin:0 0 4px}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:10px 0;border-bottom:2px solid #171714;min-height:0}
-.health{padding-right:13px;border-right:1px solid #777;min-width:0}
-.health h2{margin-bottom:7px}
-.mini{display:grid;grid-template-columns:112px 1fr;gap:7px;margin:5px 0 8px;align-items:start}
-.mini strong{font:bold 17px/1.04 'Liberation Serif','Noto Serif',serif}
-.mini p{margin:0}
-.voyager{display:grid;grid-template-columns:1fr 128px;column-gap:8px;align-content:start;min-width:0}
-.voyager h2{font-size:30px;white-space:nowrap;margin-bottom:7px}
-.voyager p{margin:0 0 7px}
-.voyager svg{grid-column:2;grid-row:1 / span 3;width:128px;height:126px}
-.voyager .caption{grid-column:1 / -1;margin-top:0}
-.footer{padding-top:7px;min-height:0}
-.markets{font-size:14px;line-height:1.22;font-weight:bold;border-bottom:1px solid #777;padding:0 0 5px}
-.brief{font-size:14px;line-height:1.22;padding:5px 0 4px}
-.factline{font:bold 14px/1.15 'Liberation Serif','Noto Serif',serif;border-top:2px solid #171714;padding-top:5px;text-align:center}
-</style>
-</head>
-<body>
-<main class="page">
-<header class="mast"><div class="brand">THE WORLD IN ONE DAY</div><div class="date">WORLD NEWS — WEDNESDAY<br><strong>18 NOVEMBER 2026</strong></div></header>
-<section class="lead">
-  <div class="leadcopy"><div class="kicker">GULF — CONFLICT WIDENS</div><h1>Gulf war widens as Iran hits Kuwait and Bahrain</h1><p>Early Wednesday, Iran fired drones at US bases in Kuwait and Bahrain; both were intercepted, with no damage or casualties. It was the third attack on Bahrain in five days, in the war's ninth month. The strikes followed US jets hitting a missile site on Qeshm Island on Tuesday; Houthis said they hit Saudi pipeline pumps.</p></div>
-  <svg class="map" viewBox="0 0 440 326" role="img" aria-label="Map of the Persian Gulf, Kuwait, Bahrain, Qatar and Qeshm Island">
-    <rect width="440" height="326" fill="#cfe0e6"/>
-    <path d="M0,0 H440 V70 L400,82 L350,74 L300,88 L250,80 L200,94 L150,84 L100,98 L50,90 L0,102 Z" fill="#c9d4c5" stroke="#252622" stroke-width="2"/>
-    <path d="M0,326 V190 L60,172 L120,186 L180,172 L240,188 L300,176 L360,192 L440,178 V326 Z" fill="#dccfae" stroke="#252622" stroke-width="2"/>
-    <path d="M262,186 L268,158 L278,158 L282,186 Z" fill="#dccfae" stroke="#252622" stroke-width="2"/>
-    <path d="M352,108 L410,96 L424,104 L366,118 Z" fill="#c9d4c5" stroke="#252622" stroke-width="2"/>
-    <ellipse cx="150" cy="150" rx="7" ry="10" fill="#c9d4c5" stroke="#252622" stroke-width="2"/>
-    <g fill="#b52020"><circle cx="80" cy="168" r="6"/><circle cx="388" cy="106" r="6"/><circle cx="150" cy="150" r="6"/></g>
-    <g fill="none" stroke="#252622" stroke-width="1.5">
-      <path d="M52 143 L76 164"/><path d="M145 216 L149 161"/><path d="M249 211 L271 164"/><path d="M388 136 L388 113"/><path d="M436 290 L428 132"/>
-    </g>
-    <g font-size="14">
-      <text x="24" y="38">IRAN</text>
-      <text x="180" y="126">PERSIAN GULF</text>
-      <text x="10" y="138">KUWAIT</text>
-      <text x="100" y="224">BAHRAIN</text>
-      <text x="212" y="218">QATAR</text>
-      <text x="292" y="140">QESHM ISLAND</text>
-      <text x="52" y="282">SAUDI ARABIA</text>
-      <text x="296" y="306" font-size="13">STRAIT OF HORMUZ</text>
-      <text x="12" y="318" font-size="13">GULF REGION — WED 18 NOV</text>
-    </g>
-  </svg>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1024, initial-scale=1"><style>
+*{box-sizing:border-box}html,body{margin:0;width:1024px;height:1024px;overflow:hidden;background:#f4f0e6;color:#171714}body{padding:8px 18px;font-family:Arial,Helvetica,sans-serif}.page{height:1008px;display:grid;grid-template-rows:18px 110px 28px 215px 232px 278px 70px 35px;gap:3px}.topline{font-size:10px;font-weight:bold;letter-spacing:1.3px;display:flex;justify-content:space-between;border-bottom:1px solid #171714}.mast{text-align:center;border-bottom:4px solid #171714;position:relative;padding-top:1px}.mast h1{font: bold 64px/.95 Georgia,'Times New Roman',serif;letter-spacing:-2px;margin:0}.mast p{font:italic 14px/1.2 Georgia,serif;margin:5px 0}.counts{position:absolute;right:0;top:5px;font-size:10px;font-weight:bold}.bar{display:flex;font-size:10px;font-weight:bold;text-align:center;line-height:28px;color:#171714}.bar span{flex:1;border-right:1px solid #f4f0e6}.asia{background:#d5be86}.me{background:#d79a82}.eu{background:#a9bfab}.af{background:#c8a5a0}.am{background:#9db8c2}.oc{background:#d5c797}.gl{background:#b8adca}.leadrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.lead{border-bottom:2px solid #171714;padding:0 8px 5px;min-width:0;overflow:hidden}.lead:first-child{padding-left:0}.lead:last-child{padding-right:0}.ill{height:62px;width:100%;display:block;background:#e7e1d3;border:1px solid #777}.badge{display:inline-block;background:#171714;color:#f4f0e6;font:bold 13px/20px Arial;padding:0 7px;margin-top:4px}.tag{font:bold 9px/1.1 Arial;letter-spacing:.8px;margin:4px 0;color:#4b4035}.lead h2{font:bold 23px/1.02 Georgia,serif;margin:2px 0 4px}.lead p{font:12px/1.13 Arial;margin:0}.source{font:bold 9px/1 Arial;letter-spacing:.6px;margin-top:4px}.featuregrid{display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:1fr 1fr;gap:6px 9px;border-bottom:2px solid #171714;padding:3px 0 6px}.feature{position:relative;min-width:0;border-right:1px solid #aaa;padding:0 7px 0 2px;overflow:hidden}.feature:nth-child(5n){border-right:0}.feature .badge{font-size:11px;line-height:16px;margin:0}.feature svg{width:38px;height:30px;float:right;margin:0 2px 2px 3px}.feature .tag{font-size:8px;margin:3px 0}.feature h3{font:bold 18px/1.02 Georgia,serif;margin:2px 0 4px}.feature p{font:10.5px/1.08 Arial;margin:0}.bottom{display:grid;grid-template-columns:286px 1fr;gap:12px;min-height:0}.mapbox{border-right:2px solid #171714;padding-right:9px}.mapbox h2,.briefs h2{font:bold 14px/18px Georgia,serif;letter-spacing:.4px;margin:0 0 3px;border-bottom:1px solid #171714}.world{width:100%;height:255px;display:block;background:#e8e4d8}.briefs{min-width:0}.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.briefcol{display:flex;flex-direction:column;gap:3px}.item{font:10px/1.03 Arial;border-bottom:1px dotted #9b9588;padding:0 0 2px;min-height:0}.item b{font:bold 10px/1 Arial}.item .n{display:inline-block;background:#171714;color:#f4f0e6;font:bold 9px/14px Arial;width:15px;text-align:center;margin-right:3px}.datecheck{font:bold 10px/1.2 Arial;border-top:2px solid #171714;border-bottom:1px solid #171714;padding:4px 1px}.footer{font:10px/1.2 Arial;text-align:center;padding-top:3px}.smallcaps{font-weight:bold;letter-spacing:.5px}.map text{font-family:Arial,sans-serif;font-weight:bold;fill:#171714}
+</style></head><body><main class="page">
+<div class="topline"><span>THE WORLD'S NEWS IN ONE PICTURE</span><span>40 STORIES - 6 CONTINENTS - ONE DAY</span></div>
+<header class="mast"><h1>Wednesday 18 November 2026</h1><p>Everything on this page happened, or was first reported, on Wednesday 18 November 2026.</p></header>
+<div class="bar"><span class="asia">ASIA 6</span><span class="me">MIDDLE EAST 3</span><span class="eu">EUROPE 9</span><span class="af">AFRICA 6</span><span class="am">AMERICAS 8</span><span class="oc">OCEANIA 4</span><span class="gl">GLOBAL 4</span></div>
+<section class="leadrow">
+<article class="lead"><svg class="ill" viewBox="0 0 280 62" aria-label="Persian Gulf diagram"><rect width="280" height="62" fill="#c9dfe4"/><path d="M0 0h280v10l-45 8-40-4-45 10-40-8-50 10L0 20zm0 62V45l55-8 45 8 55-8 55 10 70-7v22z" fill="#d5c9aa" stroke="#333"/><ellipse cx="92" cy="31" rx="4" ry="5" fill="#b52222"/><circle cx="39" cy="40" r="3" fill="#b52222"/><circle cx="235" cy="24" r="3" fill="#b52222"/><text x="10" y="9" font-size="7">IRAN</text><text x="102" y="34" font-size="7">PERSIAN GULF</text><text x="7" y="54" font-size="7">KUWAIT</text><text x="74" y="57" font-size="7">BAHRAIN</text><text x="193" y="43" font-size="7">QATAR</text><text x="237" y="17" font-size="7">QESHM</text></svg><span class="badge">1</span><div class="tag">MIDDLE EAST · IRAN WAR</div><h2>Iran drones target US bases</h2><p>Early Wednesday, drones at Ali Al Salem, Kuwait, and Bahrain were intercepted; no damage or casualties. Third Bahrain attack in five days. US jets hit Qeshm on Tuesday.</p><div class="source">AP</div></article>
+<article class="lead"><svg class="ill" viewBox="0 0 280 62" aria-label="Plane and flags"><rect width="280" height="62" fill="#e7e1d3"/><path d="M28 37l91-15 23-15 10 1-12 16 69-6 13 4-82 14-22 12-9-1 8-12-71 9z" fill="#333"/><path d="M203 11h58v36h-58z" fill="#c92528"/><path d="M213 17l2 5 6 1-5 4 2 6-5-3-5 3 2-6-5-4 6-1z" fill="#f4d54c"/><path d="M230 18h26v22h-26z" fill="#fff"/><path d="M230 25h26v7h-26z" fill="#2861a5"/><path d="M230 32h26v8h-26z" fill="#c92528"/></svg><span class="badge">2</span><div class="tag">ASIA · APEC SUMMIT</div><h2>Xi greets Trump as APEC opens</h2><p>Trump arrived Wednesday and Xi greeted him at the airport in Shenzhen. Xi and Putin met; their first three-way meeting with Trump is set for Thursday.</p><div class="source">AP</div></article>
+<article class="lead"><svg class="ill" viewBox="0 0 280 62" aria-label="Earth and Voyager"><rect width="280" height="62" fill="#18232c"/><circle cx="44" cy="31" r="18" fill="#5b8ca2"/><path d="M34 24l8-6 7 4-3 6 7 3-6 9-9-3-1-7z" fill="#83a77b"/><path d="M68 31h120" stroke="#eee0ae" stroke-dasharray="4 4"/><path d="M192 25h32v12h-32zm15-8v28m17-14 25-10m-25 10 25 10" fill="none" stroke="#e7cc79" stroke-width="3"/><text x="75" y="22" font-size="8" fill="#fff">ONE LIGHT-DAY</text></svg><span class="badge">3</span><div class="tag">SPACE · SCIENCE</div><h2>Voyager 1 reaches one light-day</h2><p>At 5:16 a.m. ET Wednesday it passed 25.9 billion km (16.1 billion miles). A signal now takes a full day. Launched 5 September 1977.</p><div class="source">NASA</div></article>
 </section>
-<section class="row3">
-  <article class="card">
-    <svg viewBox="0 0 100 80" aria-hidden="true"><path d="M3 23h42v7H3zm52 0h42v7H55zM7 30h6v30H7zm22 0h6v30h-6zm31 0h6v30h-6zm22 0h6v30h-6zM2 60h43v5H2zm53 0h43v5H55z" fill="#333"/><path d="M49 30l9 12-10 8 14 10" fill="none" stroke="#b52020" stroke-width="3"/><path d="M45 67l-18 8 6 3 17-7 14 6 7-3-20-10z" fill="#607d8a"/><path d="M47 29l4 8m4-8-4 8" stroke="#b52020" stroke-width="2"/></svg>
-    <h2>Kerch Bridge hit a third time</h2><p>Third strike in three days on Wednesday; traffic halted again. On Tuesday a 227-metre road arch fell into the strait. In Odesa, 4 killed, 17 injured.</p>
-  </article>
-  <article class="card">
-    <svg viewBox="0 0 100 80" aria-hidden="true"><rect x="3" y="5" width="94" height="67" fill="#f4f0e6" stroke="#252622"/><g><rect x="7" y="9" width="27" height="59" fill="#c82026"/><path d="M13 17l2 4 4 .3-3 2.5 1 4-4-2.4-3.5 2 1-4-3-2.5 4-.2zM24 14l1 2 2 .2-1.5 1.2.5 2-2-1.1-1.6 1 .5-2-1.5-1.3 2-.1zM27 23l1 2 2 .2-1.5 1.2.5 2-2-1.1-1.6 1 .5-2-1.5-1.3 2-.1z" fill="#f5d84d"/></g><g><rect x="37" y="9" width="27" height="59" fill="#fff"/><rect x="37" y="29" width="27" height="20" fill="#2461a5"/><rect x="37" y="49" width="27" height="19" fill="#c82026"/></g><g><rect x="67" y="9" width="27" height="59" fill="#fff"/><path d="M67 9h27v6H67zm0 12h27v6H67zm0 12h27v6H67zm0 12h27v6H67zm0 12h27v6H67z" fill="#c82026"/><rect x="67" y="9" width="12" height="25" fill="#234779"/></g></svg>
-    <div class="caption">CHINA — RUSSIA — USA</div><h2>Three powers meet</h2><p>Xi and Putin met at APEC in Shenzhen. Trump arrived Wednesday; the first three-way meeting is set for Thursday. In Manila, Trump announced a US–Philippines trade deal.</p>
-  </article>
-  <article class="card">
-    <svg viewBox="0 0 100 80" aria-hidden="true"><path d="M8 68h84M14 63h72M20 62V38q0-27 30-33 30 6 30 33v24M29 62V39q0-18 21-24 21 6 21 24v23M45 62V40q0-8 5-11 5 3 5 11v22" fill="none" stroke="#252622" stroke-width="3.5"/><path d="M10 72h80" stroke="#252622" stroke-width="2"/><path d="M24 63V45m13 18V39m26 24V39m13 24V45" stroke="#252622" stroke-width="2"/></svg>
-    <div class="senate-score">56–44</div><h2>Democrats take the Senate</h2><p>Mary Peltola beat Dan Sullivan, 50.12% to 45.80%, becoming the first Alaska Native senator. Ninth midterm Senate flip; Democrats' largest majority since 2009.</p>
-  </article>
-</section>
-<section class="row2">
-  <article class="health"><h2>Health: two outbreaks</h2>
-    <div class="mini"><strong>EBOLA<br>DR CONGO</strong><p>Outbreak passes 11,000 cases and 5,400 deaths — second-largest on record. WHO: still a public health emergency. Seven in ten children under five die.</p></div>
-    <div class="mini"><strong>MEASLES<br>UNITED STATES</strong><p>US loses elimination status held since 2000: 5,412 cases, 10 deaths, 45 states in 2026 — most since 1991. Endemic again.</p></div>
-  </article>
-  <article class="voyager"><div><h2>Voyager 1: one light-day</h2><p>At 5:16 a.m. ET Wednesday, Voyager 1 reached one light-day from Earth — 16.1 billion miles, the farthest any human-made object has travelled. A signal now takes a full day to reach it.</p></div>
-    <svg viewBox="0 0 150 130" aria-hidden="true"><rect width="150" height="130" fill="#18212b"/><g fill="#f3e8be"><circle cx="17" cy="21" r="1.5"/><circle cx="48" cy="37" r="1"/><circle cx="119" cy="24" r="1.5"/><circle cx="94" cy="77" r="1"/><circle cx="132" cy="103" r="1"/><circle cx="24" cy="96" r="1"/><circle cx="73" cy="17" r="1"/><circle cx="108" cy="47" r="1"/></g><circle cx="20" cy="65" r="9" fill="#d4ad55"/><path d="M34 65h38" stroke="#e5d3a2" stroke-dasharray="3 3"/><path d="M77 54h25v22H77zM89 43v44M77 65H61M102 65l17-12M102 65l17 12" fill="none" stroke="#e4c76b" stroke-width="3"/><path d="M119 53l12-5v10zM119 77l12 5v-10z" fill="#e4c76b"/></svg>
-    <div class="caption">EARTH — VOYAGER 1 • LAUNCHED 1977</div>
-  </article>
-</section>
-<footer class="footer">
-  <div class="markets">MARKETS • DOW −1.11% (50,198.17) • S&amp;P 500 −0.23% (7,323.63) • NASDAQ +0.42% (24,429.88) • DAX −1.19% • FTSE 100 −1.30% • CAC 40 −0.85% • BRENT $91.95 (−1.28%) • NVIDIA Q3 $115.8BN, +103%</div>
-  <div class="brief"><b>IN BRIEF</b> — An-12 military plane crashes in Siberia (Kemerovo); all 19 aboard killed. Earthquakes: Papua New Guinea 5.8; Romania 5.3, two hurt. Category 5 Cyclone Xavier brushes the Northern Cook Islands; no casualties reported. Israel: Kahana elected Knesset speaker; Herzog asks Eisenkot to form a government, bypassing Netanyahu.</div>
-  <div class="factline">Every story on this page happened, or was first reported, on Wednesday 18 November 2026.</div>
-</footer>
-</main>
-</body>
-</html>
+<section class="featuregrid" id="features"></section>
+<section class="bottom"><div class="mapbox"><h2>WHERE IT HAPPENED</h2><svg class="world map" viewBox="0 0 280 265" aria-label="World map with numbered feature pins"><rect width="280" height="265" fill="#e8e4d8"/><g fill="#c8c4b7" stroke="#756f64" stroke-width="1"><path d="M18 44l20-23 43-8 25 16-7 17-20 4-12 20-20 9-10 27-16-8-5-28-15-8zM58 113l22 5 17 30-9 29-13 25-13-6-3-25-12-22zM115 40l21-17 44 1 19 12 31-4 30 17-7 15-27 2-11 18-27 1-8 20-18-4-10-29-23-8zM144 99l27-10 24 11 13 25-14 46-23 26-16-10-5-35-14-25zM216 166l27-5 22 16-9 23-25 4-17-18z"/></g><g fill="#5b6b63"><circle cx="35" cy="51" r="2"/><circle cx="54" cy="66" r="2"/><circle cx="72" cy="91" r="2"/><circle cx="188" cy="71" r="2"/><circle cx="218" cy="76" r="2"/><circle cx="186" cy="134" r="2"/><circle cx="170" cy="166" r="2"/><circle cx="233" cy="51" r="2"/><circle cx="237" cy="190" r="2"/><circle cx="118" cy="78" r="2"/><circle cx="131" cy="116" r="2"/><circle cx="73" cy="170" r="2"/><circle cx="202" cy="193" r="2"/><circle cx="211" cy="181" r="2"/><circle cx="93" cy="55" r="2"/><circle cx="162" cy="39" r="2"/><circle cx="225" cy="118" r="2"/><circle cx="121" cy="193" r="2"/><circle cx="259" cy="175" r="2"/><circle cx="34" cy="111" r="2"/><circle cx="181" cy="45" r="2"/><circle cx="101" cy="215" r="2"/><circle cx="221" cy="54" r="2"/><circle cx="143" cy="199" r="2"/><circle cx="31" cy="87" r="2"/><circle cx="204" cy="210" r="2"/><circle cx="252" cy="88" r="2"/></g><g font-size="10" text-anchor="middle"><g fill="#b52222" stroke="#fff" stroke-width="1.5"><circle cx="160" cy="99" r="9"/><circle cx="230" cy="63" r="9"/><circle cx="48" cy="50" r="9"/><circle cx="143" cy="47" r="9"/><circle cx="168" cy="51" r="9"/><circle cx="49" cy="73" r="9"/><circle cx="211" cy="91" r="9"/><circle cx="143" cy="127" r="9"/><circle cx="59" cy="58" r="9"/><circle cx="129" cy="42" r="9"/><circle cx="179" cy="105" r="9"/><circle cx="198" cy="82" r="9"/><circle cx="249" cy="181" r="9"/></g><g fill="#fff" font-weight="bold"><text x="160" y="103">1</text><text x="230" y="67">2</text><text x="48" y="54">3</text><text x="143" y="51">4</text><text x="168" y="55">5</text><text x="49" y="77">6</text><text x="211" y="95">7</text><text x="143" y="131">8</text><text x="59" y="62">9</text><text x="129" y="46">10</text><text x="179" y="109">11</text><text x="198" y="86">12</text><text x="249" y="185">13</text></g></g><text x="8" y="254" font-size="8">RED NUMBERS: FEATURES 1-13 · DOTS: BRIEFS 14-40</text></svg></div><div class="briefs"><h2>ALSO ON WEDNESDAY 18 NOVEMBER</h2><div class="cols" id="briefcols"></div></div></section>
+<div class="datecheck">DATE CHECK - Left out on purpose because first reported before Wednesday: the Kerch Bridge span collapse; Nvidia's results; Peltola's Alaska win; the Prague train crash; Mongolia's president resigning; the Knesset speaker vote; the US strike on Qeshm. Not yet: the Trump-Xi-Putin summit (Thursday); Anthropic's first trade (Thursday); GTA VI's US release (Thursday); Cyclone Akvan's landfall (Friday).</div>
+<footer class="footer">Every story here happened, or was first reported, on Wednesday 18 November 2026. Sources: AP, Reuters, AFP, BBC, Al Jazeera, NASA, ONS, IMD, Fed, Amnesty. Original drawings.</footer>
+</main><script>
+const features=[
+['EUROPE · UKRAINE AID','EU proposes €45bn Ukraine loan','Repayment follows Russian reparations; EU decides next week.','EU'],['EUROPE · UKRAINE WAR','Russia fires 141 drones','126 downed; seven sites hit. Odesa strikes kill four.','AIR FORCE'],['AMERICAS · MARKETS','Fed minutes unsettle markets','Most officials saw more hikes; Dow fell 561.','FED'],['ASIA · WEATHER','Cyclone Akvan nears India','Landfall due 20 Nov; about 50,000 moved to safety.','IMD'],['AFRICA · SUDAN WAR','RSF drones killed 37','Amnesty calls for war-crimes inquiry; RSF blames army.','AMNESTY'],['AMERICAS · US POLITICS','Jeffries picked for Speaker','Chosen 251-11; could be first Black Speaker in January.','AP'],['EUROPE · ECONOMY','UK inflation hits 3.6%','October CPI up from 3.5%; fuel and tobacco costs rose.','ONS'],['MIDDLE EAST · GAZA','Israeli tanks enter central Gaza','Army cites tunnel; hospitals report three killed. Truce at risk.','REUTERS'],['ASIA · LABOUR','Bangladesh protests close 55 plants','Workers block highway; police report about 300 arrests.','DAILY STAR'],['GLOBAL · GAMES','GTA VI launches in New Zealand','Midnight launch rolls west; 14.9m digital pre-orders estimated.','SENSOR TOWER']];
+const icons=['€','141','561','A','37','251','3.6','G','55','VI'];document.getElementById('features').innerHTML=features.map((f,i)=>`<article class="feature"><span class="badge">${i+4}</span><svg viewBox="0 0 40 30" aria-hidden="true"><rect x="1" y="1" width="38" height="28" fill="#e5dfd1" stroke="#777"/><text x="20" y="21" text-anchor="middle" font-family="Georgia" font-weight="bold" font-size="17" fill="#24231f">${icons[i]}</text></svg><div class="tag">${f[0]}</div><h3>${f[1]}</h3><p>${f[2]}</p><div class="source">${f[3]}</div></article>`).join('');
+const briefs=[['COP31','Draft split on fossil-fuel phase-out; Friday deadline nears.'],['Ethiopia','Troops mass at border; monitors warn of war.'],['Anthropic','$83 a share; $81.3bn raised. Nasdaq debut Thursday as ANT.'],['Australia','Australia and UK sanction Daniella Weiss over settler violence.'],['Gold','Below $3,800 an ounce: 14-month low.'],['DR Congo','11,000+ cases, 5,400+ deaths; WHO emergency continues.'],['US','Loses status held since 2000: 5,412 cases, 10 deaths.'],['Kerch','Third hit in three days; traffic halted; Tuesday arch fell.'],['Alaska','Peltola wins 50.12%-45.80%; Senate 56-44; first Alaska Native senator.'],['Manila','Trump hails “biggest” deal; Manila calls it an economic understanding.'],['Siberia','An-12 crashes in Kemerovo; all 19 aboard killed.'],['Papua New Guinea','5.8 quake east-south-east of Madang.'],['Romania','5.3 quake; two hurt.'],['Cook Islands','Category 5; record November Southern Hemisphere strength; no casualties.'],['Israel','Kahana elected speaker; Herzog asks Eisenkot to form government.'],['Australia','Tame Impala wins seven ARIA Awards in Sydney.'],['Turin','Alcaraz beats Medvedev 6-2, 6-4.'],['Caracas','Defence partnership announced; Hegseth visits Caracas.'],['Waymo','Halts US freeway rides after California ban.'],['Seoul','Lee seeks Xi’s help on the North.'],['Berlin','Air defences and F-16 arms pledged to Kyiv.'],['Kosovo','Ex-president Thaci sentenced to 17 months.'],['Mozambique','Opposition leader Mondlane goes on trial.'],['Tokyo','Takaichi makes first China visit as PM.'],['Peru','M5.9 quake off south coast; no damage.'],['Senegal','Boat capsizes; at least one dead.'],['Uganda','Agrees with Tanzania to speed up EACOP pipeline.']];const cols=[[],[],[]];briefs.forEach((b,i)=>cols[Math.floor(i/9)].push([i+14,b]));document.getElementById('briefcols').innerHTML=cols.map(c=>`<div class="briefcol">${c.map(([n,b])=>`<div class="item"><span class="n">${n}</span><b>${b[0]}:</b> ${b[1]}</div>`).join('')}</div>`).join('');
+</script></body></html>
